@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hora:"
+        android:id="@+id/horaTV"
+        android:layout_alignLeft="@+id/doseTV"
+        android:layout_alignStart="@+id/doseTV"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editarHoraDoseBT"
+        android:layout_toStartOf="@+id/editarHoraDoseBT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/doseTV"
+        android:text="Dose"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horaTV"
+        android:layout_toStartOf="@+id/editarHoraDoseBT" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editarHoraDoseBT"
+        android:onClick="editarHoraDose"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/removerHoraDoseBT"
+        android:layout_toStartOf="@+id/removerHoraDoseBT"
+        android:background="@drawable/ic_menu_black" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removerHoraDoseBT"
+        android:onClick="confirmarRemoverHoraDose"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_delete_24px"/>
+
+
+</RelativeLayout>

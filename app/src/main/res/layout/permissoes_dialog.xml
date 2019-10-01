@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Conceder permissões!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:id="@+id/tituloPermsDialog"
+                android:textAppearance="@android:style/TextAppearance.Material.Large"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text='Para prosseguir com o uso do aplicativo, por favor, conceda todas as permissões do dispositivo. Para fazer isso, acesse as configurações do dispositivo e o menu "aplicativos". Nele, selecione o aplicativo "Harmonia", o menu de permissões e deixe todas ativadas. É importante fazer isso para o melhor funcionamento do sistema.'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView6"
+                android:textSize="18sp"
+                android:layout_below="@+id/tituloPermsDialog"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fecharDialogBt"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="Falta conceder as seguintes permissões: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPermsList"
+                android:textSize="18sp"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

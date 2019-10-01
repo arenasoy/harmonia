@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Harmonia</string>
+    <string name="title_activity_solicitar_ajuda">SolicitarAjuda</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_lista_contatos">ListaContatos</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_classe_inutil">ClasseInutil</string>
+    <string name="title_activity_contatos">ContatosActivity</string>
+    <string name="title_activity_ataques">AtaquesActivity</string>
+    <string name="title_activity_remedios">RemediosActivity</string>
+    <string name="title_activity_atividades">AtividadesActivity</string>
+    <string name="title_activity_frase">FraseActivity</string>
+    <string name="title_activity_cadastro_ataque_sentimentos">CadastroAtaqueSentimentos</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_alarme_tocando">AlarmeTocando</string>
+    <string name="title_activity_enviar_registros">EnviarRegistrosActivity</string>
+    <string name="title_activity_cadastro_ataque2">CadastroAtaque2</string>
+    <string name="title_activity_cadastro_ataque_sensacoes">CadastroAtaqueSensacoes</string>
+    <string name="title_activity_cadastro_ataque_metodos">CadastroAtaqueMetodosActivity</string>
+</resources>

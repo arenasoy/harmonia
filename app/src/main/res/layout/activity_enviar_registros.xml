@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.ifpr.tcc.ataque.views.EnviarRegistrosActivity">
+
+    <Button
+        android:text="1 dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/umDiaBT"
+        android:onClick="selecionarUmDia"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    <Button
+        android:text="7 dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seteDiasBT"
+        android:onClick="selecionarSeteDias"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/umDiaBT"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    <Button
+        android:text="30 dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trintaDiasBT"
+        android:onClick="selecionarTrintaDias"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/seteDiasBT"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/ataquesEnviarLV"
+        android:layout_height="449dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/umDiaBT" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_media_play"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_marginEnd="15dp"
+        app:elevation="5dp"
+        android:layout_below="@+id/ataquesEnviarLV"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

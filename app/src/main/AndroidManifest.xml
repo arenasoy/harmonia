@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.ifpr.tcc">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <item android:name="windowNoTitle">
+        true
+    </item>
+
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".usuario.views.CadastroUsuario" />
+        <activity
+            android:name=".solicitarAjuda.SolicitarAjuda"
+            android:label="@string/title_activity_solicitar_ajuda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".contato.views.CadastroContato" />
+        <activity
+            android:name=".contato.views.ContatosActivity"
+            android:label="@string/title_activity_contatos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ataque.views.AtaquesActivity"
+            android:label="@string/title_activity_ataques"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".remedio.views.RemediosActivity"
+            android:label="@string/title_activity_remedios"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".atividade.views.AtividadeActivity" />
+        <activity
+            android:name=".atividade.frase.views.FraseActivity"
+            android:label="@string/title_activity_frase"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".atividade.frase.views.CadastroFrase" />
+        <activity android:name=".atividade.imagem.views.CadastroImagem" />
+        <activity
+            android:name=".atividade.imagem.views.ImagensActivity"
+            android:label="ImagensActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".atividade.musica.views.MusicasActivity"
+            android:label="MusicasActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".atividade.musica.views.CadastroMusica" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            >
+        </activity>
+        <activity android:name=".configuracoes.Configuracoes" />
+        <activity
+            android:name=".ataque.views.CadastroAtaqueSentimentos"
+            android:label="@string/title_activity_cadastro_ataque_sentimentos"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".remedio.views.CadastroRemedio" />
+        <activity android:name=".remedio.views.IntervaloActivity" />
+        <activity android:name=".remedio.views.HoraDoseActivity" />
+        <activity android:name=".remedio.views.HoraDoseForm" />
+        <activity android:name=".menuMetodos.MenuMetodosActivity" />
+        <activity android:name=".atividade.musica.views.MetodosMusica" />
+        <activity android:name=".atividade.imagem.views.MetodosImagem" />
+        <activity android:name=".atividade.frase.views.MetodosFrase" />
+
+        <receiver android:name=".remedio.alarme.AlarmReceiver" />
+        <receiver
+            android:name=".realm.BootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".realm.BootService"
+            android:enabled="true" />
+        <service
+            android:name=".remedio.alarme.RingtonePlayingService"
+            android:enabled="true" />
+        <service
+            android:name=".realm.BootService"
+            android:enabled="true" />
+
+        <activity android:name=".remedio.alarme.AlarmeTocando" />
+        <activity
+            android:name=".ataque.views.EnviarRegistrosActivity"
+            android:label="@string/title_activity_enviar_registros"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ataque.views.CadastroAtaque"
+            android:label="@string/title_activity_cadastro_ataque2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ataque.views.CadastroAtaqueSentimentosActivity" />
+        <activity
+            android:name=".ataque.views.CadastroAtaqueSensacoesActivity"
+            android:label="@string/title_activity_cadastro_ataque_sensacoes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ataque.views.CadastroAtaqueMetodosActivity"
+            android:label="@string/title_activity_cadastro_ataque_metodos"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ComoUtilizarActivity" />
+        <activity android:name=".SobreActivity"></activity>
+
+        <receiver
+            android:name=".remedio.alarme.NotificationDismissedReceiver"
+            android:exported="false"
+            android:enabled="true">
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selecionarAtaqueCB"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/EstiloCheckbox"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/dataAtaqueLabel"
+        android:text="Data ataque"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/selecionarAtaqueCB"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Enviado pela última vez em:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviarUltimoLabel"
+        android:layout_below="@+id/dataAtaqueLabel"
+        android:layout_toEndOf="@+id/selecionarAtaqueCB" />
+
+    <TextView
+        android:text="não enviado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviadoUltimaTV"
+        android:layout_below="@+id/selecionarAtaqueCB"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/selecionarAtaqueCB"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

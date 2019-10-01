@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:checkboxStyle">@style/EstiloCheckbox</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="EstiloCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/azul_cinza</item>
+    </style>
+
+    <style name="EstiloSemBold">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

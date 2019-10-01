@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.ifpr.tcc.menuMetodos.MenuMetodosActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_above="@+id/scrollView2"
+            android:layout_toEndOf="@+id/scrollView2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discagemRL"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/discagemBT"
+                    android:background="@drawable/borda_redonda_verde"
+                    android:src="@drawable/ic_call_white_24px"
+                    android:scaleType="fitXY"
+                    android:padding="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discagem rápida"
+                    android:id="@+id/discagemTV"
+                    android:layout_alignBottom="@+id/discagemBT"
+                    android:layout_toEndOf="@+id/discagemBT"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/metodosRL"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/discagemBT"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/l1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/respiracaoBT"
+                        android:background="@drawable/borda_redonda_azul"
+                        android:src="@drawable/ic_breath_24px"
+                        android:scaleType="fitXY"
+                        android:padding="30dp"
+                        android:onClick="abrirRespiracao"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Respiração"
+                        android:id="@+id/contatosTV"
+                        android:layout_below="@+id/respiracaoBT"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignEnd="@+id/respiracaoBT"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="15dp" />
+
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/frasesBT"
+                        android:background="@drawable/borda_redonda_azul_marinho"
+                        android:src="@drawable/ic_format_list_bulleted_white_48dp"
+                        android:scaleType="fitCenter"
+                        android:padding="30dp"
+                        android:onClick="abrirFrases"
+                        android:layout_alignTop="@+id/musicaBT"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Frases"
+                        android:id="@+id/frasesTV"
+                        android:layout_below="@+id/frasesBT"
+                        android:layout_alignEnd="@+id/frasesBT"
+                        android:layout_alignParentStart="true"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/l2"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/l1"
+                    android:layout_toEndOf="@+id/l1"
+                    android:layout_marginLeft="15dp">
+
+
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/musicaBT"
+                        android:background="@drawable/borda_redonda_azul_cinza"
+                        android:src="@drawable/ic_music_note_white_48dp"
+                        android:scaleType="fitCenter"
+                        android:padding="30dp"
+                        android:onClick="abrirMusicas"
+                        android:layout_alignTop="@+id/imagensTV"
+                        android:layout_alignParentEnd="true"
+                        android:cropToPadding="false" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Música"
+                        android:id="@+id/musicaTV"
+                        android:layout_below="@+id/musicaBT"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignStart="@+id/musicaBT"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="15dp" />
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/fotosBT"
+                        android:background="@drawable/borda_redonda_roxo"
+                        android:src="@drawable/ic_photo_library_white_48dp"
+                        android:scaleType="fitCenter"
+                        android:padding="30dp"
+                        android:onClick="abrirImagens"
+                        android:layout_above="@+id/imagensTV"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imagens"
+                        android:id="@+id/imagensTV"
+                        android:layout_alignBaseline="@+id/contatosTV"
+                        android:layout_alignBottom="@+id/contatosTV"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignStart="@+id/fotosBT"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.ifpr.tcc.contato.views.CadastroContato"
+    android:background="@color/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/salvarContatoBT"
+        android:onClick="salvarContato"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/telefoneContatoTF" />
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codigoNumero"
+        app:defaultNameCode="BR"
+        android:layout_below="@+id/telefoneContatoCadastroTv"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Telefone:"
+        android:id="@+id/telefoneContatoCadastroTv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar pedido de ajuda"
+        android:id="@+id/checkBoxEnviarSMS"
+        android:checked="true"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolher da agenda"
+        android:id="@+id/abrirAgendaBT"
+        android:onClick="abrirAgenda"
+        android:layout_above="@+id/telefoneContatoCadastroTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discagem rápida"
+        android:id="@+id/checkBoxDiscagemRapida"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:ems="10"
+        android:id="@+id/nomeContatoTF"
+        android:layout_above="@+id/salvarContatoBT"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/nomeContatoCadastroTv" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/telefoneContatoTF"
+        android:layout_alignBottom="@+id/codigoNumero"
+        android:layout_toEndOf="@+id/codigoNumero" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nome:"
+        android:id="@+id/nomeContatoCadastroTv"
+        android:layout_below="@+id/codigoNumero"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

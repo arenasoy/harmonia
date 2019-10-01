@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cadastro_ataque_sentimentos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.edu.ifpr.tcc.ataque.views.CadastroAtaqueSentimentosActivity"
+    tools:showIn="@layout/activity_cadastro_ataque_sentimentos">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTituloSentimentos">
+
+        <TextView
+            android:id="@+id/tituloSentimentosTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sentimentos antes do ataque"
+            android:textColor="@color/defaultContentColor"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutSalvarSentimentosBt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/salvarSentimentosBt"
+            android:text="Salvar"
+            android:onClick="salvarRegistro"
+            android:layout_alignParentRight="true"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layoutTituloSentimentos"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/layoutSalvarSentimentosBt"
+        android:id="@+id/scrollLayoutCheckboxesSentimentos">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCheckboxesSentimentos">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxOtimista"
+                    android:text="Otimista"
+                    android:layout_alignParentTop="true"
+                    style="@style/EstiloCheckbox"
+                    android:layout_marginTop="0dp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxTranquilo"
+                    android:text="Tranquilo"
+                    android:layout_below="@id/checkboxOtimista"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxEspecial"
+                    android:text="Especial"
+                    android:layout_below="@id/checkboxTranquilo"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxOrgulhoso"
+                    android:text="Orgulhoso"
+                    android:layout_below="@id/checkboxEspecial"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxFeliz"
+                    android:text="Feliz"
+                    android:layout_below="@id/checkboxOrgulhoso"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxAnsioso"
+                    android:text="Ansioso"
+                    android:layout_below="@id/checkboxFeliz"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxAmoroso"
+                    android:text="Amoroso"
+                    android:layout_below="@id/checkboxAnsioso"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxIndiferente"
+                    android:text="Indiferente"
+                    android:layout_below="@id/checkboxAmoroso"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxFrustrado"
+                    android:text="Frustrado"
+                    android:layout_below="@id/checkboxIndiferente"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxInseguro"
+                    android:text="Inseguro"
+                    android:layout_below="@id/checkboxFrustrado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxCansado"
+                    android:text="Cansado"
+                    android:layout_below="@id/checkboxInseguro"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxEnvergonhado"
+                    android:text="Envergonhado"
+                    android:layout_below="@id/checkboxCansado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxConstrangido"
+                    android:text="Constrangido"
+                    android:layout_below="@id/checkboxEnvergonhado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxAborrecido"
+                    android:text="Aborrecido"
+                    android:layout_below="@id/checkboxConstrangido"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxAssustado"
+                    android:text="Assustado"
+                    android:layout_below="@id/checkboxAborrecido"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxDeprimido"
+                    android:text="Deprimido"
+                    android:layout_below="@id/checkboxAssustado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxTriste"
+                    android:text="Triste"
+                    android:layout_below="@id/checkboxDeprimido"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxRaiva"
+                    android:text="Raiva"
+                    android:layout_below="@id/checkboxTriste"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxAmedrontado"
+                    android:text="Amedrontado"
+                    android:layout_below="@id/checkboxRaiva"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxMagoado"
+                    android:text="Magoado"
+                    android:layout_below="@id/checkboxAmedrontado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxCulpado"
+                    android:text="Culpado"
+                    android:layout_below="@id/checkboxMagoado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxHumilhado"
+                    android:text="Humilhado"
+                    android:layout_below="@id/checkboxCulpado"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxIrritado"
+                    android:text="Irritado"
+                    android:layout_below="@id/checkboxHumilhado"
+                    style="@style/EstiloCheckbox" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sentimentosOutrosET"
+                    android:hint="Outros"
+                    android:layout_below="@id/checkboxIrritado"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:textColor="@color/azul_cinza"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

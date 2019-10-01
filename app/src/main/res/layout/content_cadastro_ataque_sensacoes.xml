@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cadastro_ataque_sensacoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.edu.ifpr.tcc.ataque.views.CadastroAtaqueSensacoesActivity"
+    tools:showIn="@layout/activity_cadastro_ataque_sensacoes">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTituloSensacoes">
+
+        <TextView
+            android:id="@+id/tituloSensacoesTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensações antes do ataque"
+            android:textColor="@color/defaultContentColor"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutSalvarSensacoesBT"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/salvarSensacoesBt"
+            android:text="Salvar"
+            android:onClick="salvarRegistro"
+            android:layout_alignParentRight="true"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layoutTituloSensacoes"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/layoutSalvarSensacoesBT"
+        android:id="@+id/scrollLayoutCheckboxesSensacoes">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCheckboxesSensacoes"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxTaquicardia"
+                    android:text="Taquicardia"
+                    android:layout_alignParentTop="true"
+                    style="@style/EstiloCheckbox"
+                    android:layout_marginTop="0dp"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxFaltaAr"
+                    android:text="Falta de ar"
+                    android:layout_below="@id/checkboxTaquicardia"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxRespiracaoOfegante"
+                    android:text="Respiração ofegante"
+                    android:layout_below="@id/checkboxFaltaAr"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxPressaoPeito"
+                    android:text="Pressão no peito"
+                    android:layout_below="@id/checkboxRespiracaoOfegante"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxEnjoo"
+                    android:text="Enjoo"
+                    android:layout_below="@id/checkboxPressaoPeito"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxDiarreia"
+                    android:text="Diarreia"
+                    android:layout_below="@id/checkboxEnjoo"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxNoGarganta"
+                    android:text="Nó na garganta"
+                    android:layout_below="@id/checkboxDiarreia"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxBocaSeca"
+                    android:text="Boca seca"
+                    android:layout_below="@id/checkboxNoGarganta"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxTontura"
+                    android:text="Tontura"
+                    android:layout_below="@id/checkboxBocaSeca"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxTremores"
+                    android:text="Tremores"
+                    android:layout_below="@id/checkboxTontura"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxFormigamento"
+                    android:text="Formigamento nos pés e/ou mãos"
+                    android:layout_below="@id/checkboxTremores"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxSudorese"
+                    android:text="Sudorese"
+                    android:layout_below="@id/checkboxFormigamento"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxCalorao"
+                    android:text="Calorão"
+                    android:layout_below="@id/checkboxSudorese"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxCalafrios"
+                    android:text="Calafrios"
+                    android:layout_below="@id/checkboxCalorao"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxTensaoNuca"
+                    android:text="Tensão na nuca"
+                    android:layout_below="@id/checkboxCalafrios"
+                    style="@style/EstiloCheckbox" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxFaltaConcentracaoMemoria"
+                    android:text="Falta de concentração e memória"
+                    android:layout_below="@id/checkboxTensaoNuca"
+                    style="@style/EstiloCheckbox" />
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxInsonia"
+                    android:text="Insônia"
+                    android:layout_below="@id/checkboxFaltaConcentracaoMemoria"
+                    style="@style/EstiloCheckbox" />
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxVisaoEmbacada"
+                    android:text="Visão embaçada"
+                    android:layout_below="@id/checkboxInsonia"
+                    style="@style/EstiloCheckbox" />
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxVontadeUrinar"
+                    android:text="Vontade de urinar"
+                    android:layout_below="@id/checkboxVisaoEmbacada"
+                    style="@style/EstiloCheckbox" />
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxDoresMusculares"
+                    android:text="Dores musculares"
+                    android:layout_below="@id/checkboxVontadeUrinar"
+                    style="@style/EstiloCheckbox" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sensacoesOutrosET"
+                    android:hint="Outros"
+                    android:layout_below="@id/checkboxDoresMusculares"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:textColor="@color/azul_cinza"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

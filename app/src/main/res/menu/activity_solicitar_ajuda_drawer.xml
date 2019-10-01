@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <group
+            android:id="@+id/menu_top"
+            android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/solicitar_ajuda"
+                android:icon="@drawable/ic_announcement_black_24dp"
+                android:title="Solicitar ajuda"/>
+
+        </group>
+
+        <group
+            android:checkableBehavior="single"
+            android:id="@+id/menu_meio">
+
+            <item
+                android:id="@+id/acalme_me"
+                android:icon="@drawable/ic_perm_media_black_24dp"
+                android:title="Acalme-me" />
+
+            <item
+                android:id="@+id/historico_ataques"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="Histórico de ataques" />
+            <item
+                android:id="@+id/gerenciar_remedios"
+                android:icon="@drawable/ic_local_pharmacy_black_24dp"
+                android:title="Remédios" />
+
+
+        </group>
+
+        <group
+            android:checkableBehavior="single"
+            android:id="@+id/fim">
+
+            <item
+                android:id="@+id/configuracoes"
+                android:icon="@drawable/ic_build_black_24dp"
+                android:title="Gerenciar conta" />
+
+            <item
+                android:id="@+id/comoUtilizar"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="Como utilizar"/>
+            <item
+                android:id="@+id/sobre"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Sobre"/>
+
+        </group>
+
+
+</menu>

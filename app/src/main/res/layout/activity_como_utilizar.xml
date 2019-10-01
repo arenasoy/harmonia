@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_como_utilizar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.ifpr.tcc.ComoUtilizarActivity">
+
+    <Button
+        android:text="Fechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecharComoBt"
+        android:onClick="fechar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fecharComoBt"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Guia de utilização"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guiaTV"
+                android:layout_marginTop="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textColor="@color/defaultContentColor" />
+
+            <TextView
+                android:text='Após cada ataque, adicione informações sobre este no "Histórico de Ataques", para que posteriormente envie ou exiba para seu médico.'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:id="@+id/textView7"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text='Agora, é hora de efetuar as configurações iniciais. Acesse a opção "Gerenciar conta" e cadastre seus contatos e configure os métodos distrativos. É importante fazer isso agora pois eles serão utilizados posteriormente, quando uma crise ocorrer. Cadastre coisas que o agradem e, preferencialmente, acalmem.'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="11dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Cadastre seus remédios com os horários apropriados, também."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewaaa"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentStart="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Este é o aplicativo Harmonia. Seu propósito é auxiliar pessoas que possuem a Síndrome do Pânico."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView4"
+                android:textSize="16sp"
+                android:layout_below="@+id/guiaTV"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

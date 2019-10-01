@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nome remédio"
+        android:id="@+id/nomeRemedioTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editarRemedioBT"
+        android:layout_toStartOf="@+id/editarRemedioBT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Horários remédio"
+        android:id="@+id/horariosRemedioTV"
+        android:layout_below="@+id/intervaloTV"
+        android:layout_alignLeft="@+id/intervaloTV"
+        android:layout_alignStart="@+id/intervaloTV"
+        android:layout_toStartOf="@+id/editarRemedioBT" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removerRemedioBT"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_delete_24px"
+        android:layout_alignBottom="@+id/editarRemedioBT"
+        android:layout_alignTop="@+id/editarRemedioBT" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editarRemedioBT"
+        android:background="@drawable/ic_edit_black_24dp"
+        android:layout_alignBaseline="@+id/intervaloTV"
+        android:layout_alignBottom="@+id/intervaloTV"
+        android:layout_toLeftOf="@+id/removerRemedioBT"
+        android:layout_toStartOf="@+id/removerRemedioBT" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Dias"
+        android:id="@+id/intervaloTV"
+        android:layout_below="@+id/nomeRemedioTV"
+        android:layout_alignStart="@+id/nomeRemedioTV"
+        android:layout_toStartOf="@+id/editarRemedioBT" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ligadoCB"
+        android:checked="true"
+        android:layout_marginRight="20px"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editarRemedioBT"
+        android:layout_toStartOf="@+id/horariosRemedioTV"
+        android:layout_alignBottom="@+id/editarRemedioBT" />
+</RelativeLayout>

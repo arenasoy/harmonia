@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smsCB"
+        android:checked="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/editarContatoBT" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editarContatoBT"
+        android:onClick="editarContato"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/removerContatoBT"
+        android:layout_toStartOf="@+id/removerContatoBT"
+        android:background="@drawable/ic_edit_black_24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removerContatoBT"
+        android:onClick="confirmarRemoverContato"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_delete_24px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nome ajudante"
+        android:id="@+id/nomeAjudanteTV"
+        android:layout_alignLeft="@+id/telefoneAjudanteTV"
+        android:layout_alignStart="@+id/telefoneAjudanteTV"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editarContatoBT"
+        android:layout_toStartOf="@+id/editarContatoBT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/telefoneAjudanteTV"
+        android:text="Telefone ajudante"
+        android:layout_below="@+id/nomeAjudanteTV"
+        android:layout_toEndOf="@+id/smsCB"
+        android:layout_marginStart="16dp" />
+
+</RelativeLayout>

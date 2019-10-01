@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6fae36</color>
+    <color name="colorPrimaryDark">#2D5E01</color>
+    <color name="colorAccent">#3dac84</color>
+    <color name="background">#ffffff</color>
+    <color name="azulClaro">#45a8bc</color>
+    <color name="verdeClaro">#c9ec9a</color>
+    <color name="verdeMedio">#32AB47</color>
+    <color name="verdeEscuro">#203306</color>
+    <color name="lilas">#D358D3</color>
+
+
+    <color name="verde">#74b639</color>
+    <color name="verde_quase_escuro">#4B8517</color>
+    <color name="verde_escuro">#2D5E01</color>
+    <color name="verde_claro">#8AC357</color>
+
+    <color name="azul_escuro">#1b998b</color>
+    <color name="azul">#45a8bc</color>
+    <color name="verde_azulado">#1b998b</color>
+    <color name="branco">#FDFFFC</color>
+    <color name="roxo">#8d73a9</color>
+    <color name="laranja">#F6AF2B</color>
+
+    <color name="azul_cinza">#437C90</color>
+    <color name="azul_marinho">#003063</color>
+
+</resources>
